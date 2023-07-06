@@ -1,3 +1,4 @@
+
 const form = document.querySelector("form");
 const nameInput = document.getElementById("name");
 const surnameInput = document.getElementById("surname");
@@ -147,16 +148,40 @@ function clearError(input) {
   }
 }
 
-// Slider Swiper
-// if (window.innerWidth <=390) {
-// new Swiper(".image-slider");
-// }
-// const swiper = new Swiper(".image-slider", {
 
-// });
-// new Swiper(".image-slider", {
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: "swiper-button-prev",
-//     },
-// });
+new Swiper(".first-swiper", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel: true,
+  keyboard: true,
+}); 
+new Swiper(".card-swiper", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+     mousewheel: true,
+     keyboard: true,
+});
+new Swiper(".img-swiper", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+     mousewheel: true,
+     keyboard: true,
+});
+new Swiper(".elipse-swiper", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+     mousewheel: true,
+     keyboard: true,
+});

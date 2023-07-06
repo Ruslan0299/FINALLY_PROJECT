@@ -29,25 +29,30 @@
   }
   .header-buttons {
     margin-top: 60px;
-    & button:first-child {
-      width: 75px;
-      height: 24px;
-      border-radius: 40px;
-      margin-right: 5px;
-      font-size: 6px;
-      line-height: 8px;
+    & a:first-child {
+      & button {
+        width: 75px;
+        height: 24px;
+        border-radius: 40px;
+        margin-right: 5px;
+        font-size: 6px;
+        line-height: 8px;
+      }
     }
-    & button:last-child {
-      width: 75px;
-      height: 24px;
-      border-radius: 40px;
-      font-size: 6px;
-      line-height: 8px;
+    & a:last-child {
+      & button {
+        width: 75px;
+        height: 24px;
+        border-radius: 40px;
+        font-size: 6px;
+        line-height: 8px;
+      }
     }
   }
   .text-dive {
     margin-top: 35px;
     font-size: 23px;
+    max-width: 300px;
   }
   .text-virtual {
     font-size: 20px;
@@ -490,6 +495,10 @@
   }
   .footer_lower_text {
     margin-top: 11px;
+    text-align: center;
+    & img {
+      max-width: -webkit-fill-available;
+    }
     & p {
       margin: 39px 49px;
       font-size: 10px;
@@ -503,7 +512,7 @@
   .vector-18 {
     display: none;
   }
-  //footer swctio ended
+  //footer section ended
 }
 
 @media (min-width: 480px) and (max-width: 777px) {

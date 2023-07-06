@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="/dist/style.css" />
     <link rel="stylesheet" href="/dist/media_tablet.css" />
     <link rel="stylesheet" href="/dist/media_mobile.css" />
-    <!-- <link rel="stylesheet" href="/node_modules/swiper/swiper.scss" /> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css" />
     <script src="/node_modules/validator/validator.js"></script>
-    <!-- <script src="/node_modules/swiper/swiper-bundle.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="/swiper-script.js"></script>
+    <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="/script.js" defer></script>
     <title>HYDRA</title>
   </head>
@@ -63,15 +60,21 @@
               />
               <label for="burger_checkbox" class="burger_menu_icon"></label>
               <div class="nuv">
-                <a href="#" class="nuv-link">ABOUT</a>
-                <a href="#" class="nuv-link">SERVICES</a>
-                <a href="#" class="nuv-link">TECHNOLOGIES</a>
-                <a href="#" class="nuv-link">HOW TO</a>
+                <a href="#about_section" class="nuv-link">ABOUT</a>
+                <a href="#services_build_secion" class="nuv-link">SERVICES</a>
+                <a href="#technologies_section" class="nuv-link"
+                  >TECHNOLOGIES</a
+                >
+                <a href="#how_to_we_build_section" class="nuv-link">HOW TO</a>
               </div>
             </nav>
             <div class="header-buttons">
-              <button type="button">CONTACT US</button>
-              <button type="button">JOIN HYDRA</button>
+              <a href="#footer_section"
+                ><button type="button">CONTACT US</button></a
+              >
+              <a href="#section_forma"
+                ><button type="button">JOIN HYDRA</button></a
+              >
             </div>
           </header>
           <main>
@@ -128,42 +131,37 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="image-slider swiper-container">
-              <div class="image-slider__wrapper swiper-wraper">
-                <div class="image-slider__slide swiper-slide">
-                  <div class="part-1-img">
-                    <img src="/assets/Location-Icon.svg" alt="Location Icon" />
-                  </div>
-                  <div class="part-1-text">
-                    <span>Pay Us a Visit</span>
-                    <p>Union ST, Seattle, WA 98101, United States</p>
+            <div class="first-swiper swiper">
+              <div class="first-swiper-wrapper swiper-wrapper">
+                <div class="first-swiper-slide swiper-slide">
+                  <div class="slide-img">
+                    <img src="/assets/Location-Icon.svg" alt="" />
+                    <p>
+                      Union St, Seattle, WA 98101, <br />
+                      United States
+                    </p>
+                    <p></p>
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="part-2-img">
-                    <img src="/assets/phone-call.svg" alt="Phone call" />
-                  </div>
-                  <div class="part-2-text">
-                    <span>Give Us a Call</span>
+                <div class="first-swiper-slide swiper-slide">
+                  <div class="slide-img">
+                    <img src="/assets/phone-call.svg" alt="" />
                     <p>(110) 1111-1010</p>
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="part-3-img">
-                    <img src="/assets/mail.svg" alt="Mail" />
-                  </div>
-                  <div class="part-3-text">
-                    <span>Send Us a Message</span>
+                <div class="first-swiper-slide swiper-slide">
+                  <div class="slide-img">
+                    <img src="/assets/mail.svg" alt="" />
                     <p>Contact@HydraVTech.com</p>
                   </div>
                 </div>
               </div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
-            </div> -->
+            </div>
           </main>
         </section>
-        <section class="about">
+        <section id="about_section" class="about">
           <div class="hydra-vr">
             <h2>INTRODUCTION</h2>
             <div class="hydra-vr-text">
@@ -230,11 +228,24 @@
                 diam sollicitudi
               </p>
               <p>n tempor.</p>
+              <span
+                >Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
+                mattis rhoncus urna neque viverra justo. Vivamus at augue eget
+                arcu dictum. Ultrices gravida dictum fusce ut placerat orci.
+                Aenean et tortor at risus viverra adipisci ng at in. Mattis
+                aliquam faucibus purus in massa. Est placerat in egestas erat
+                imperdiet sed. Consequat sem per viverra nam libero justo
+                laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum
+                non consectetur a. Laoreet sit amet cursus sit amet. Vel eros
+                donec ac odio tempor orci dapibus. Sem nulla pharetra diam sit
+                amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudin
+                tempor.</span
+              >
               <button type="button">LET’S GET IN TOUCH</button>
             </div>
           </div>
         </section>
-        <section class="build-section">
+        <section id="services_build_secion" class="build-section">
           <div class="build-text">
             <h2>WHY BUILD</h2>
             <div class="build-text-right">
@@ -314,8 +325,76 @@
               <button type="button">TRY IT NOW</button>
             </div>
           </div>
+          <div class="visible-swiper">
+            <div class="card-swiper swiper">
+              <div class="card-swiper-wrapper swiper-wrapper">
+                <div class="card-swiper-slide swiper-slide">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="/images/Mask group3.svg" alt="foto" />
+                    </div>
+                    <h2>SIMULATION</h2>
+                    <img src="/assets/Vector 10.svg" alt="foto" />
+                    <div class="card-text">
+                      <p>Vitae sapien pellentesque habitant morbi</p>
+                      <p>nunc. Viverra aliquet porttitor rhoncus</p>
+                      <p>libero justo laoreet sit amet vitae.</p>
+                    </div>
+                    <button type="button">TRY IT NOW</button>
+                  </div>
+                </div>
+                <div class="card-swiper-slide swiper-slide">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="/images/Mask group4.svg" alt="foto" />
+                    </div>
+                    <h2>EDUCATION</h2>
+                    <img src="/assets/Vector 10.svg" />
+                    <div class="card-text">
+                      <p>Vitae sapien pellentesque habitant morbi</p>
+                      <p>nunc. Viverra aliquet porttitor rhoncus</p>
+                      <p>libero justo laoreet sit amet vitae.</p>
+                    </div>
+                    <button type="button">TRY IT NOW</button>
+                  </div>
+                </div>
+                <div class="card-swiper-slide swiper-slide">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="/images/Mask group5.svg" alt="foto" />
+                    </div>
+                    <h2>SELF-CARE</h2>
+                    <img src="/assets/Vector 10.svg" />
+                    <div class="card-text">
+                      <p>Vitae sapien pellentesque habitant morbi</p>
+                      <p>nunc. Viverra aliquet porttitor rhoncus</p>
+                      <p>libero justo laoreet sit amet vitae.</p>
+                    </div>
+                    <button type="button">TRY IT NOW</button>
+                  </div>
+                </div>
+                <div class="card-swiper-slide swiper-slide">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="/images/Mask group6.svg" alt="foto" />
+                    </div>
+                    <h2>OUTDOOR</h2>
+                    <img src="/assets/Vector 10.svg" />
+                    <div class="card-text">
+                      <p>Vitae sapien pellentesque habitant morbi</p>
+                      <p>nunc. Viverra aliquet porttitor rhoncus</p>
+                      <p>libero justo laoreet sit amet vitae.</p>
+                    </div>
+                    <button type="button">TRY IT NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
         </section>
-        <section class="technologies">
+        <section id="technologies_section" class="technologies">
           <div class="technologies-img">
             <img src="/images/Mask group7.svg" alt="foto sexy girl" />
             <h2>TECHNOLOGIES & HARDWARE</h2>
@@ -331,8 +410,26 @@
             <img src="/images/Hydra-Tech2 1.svg" alt="Icon" />
             <img src="/images/Hydra-Tech4 1.svg" alt="Icon" />
           </div>
+          <div class="img-swiper swiper">
+            <div class="img-swiper-wrapper swiper-wrapper">
+              <div class="img-swiper-slide swiper-slide">
+                <img src="/images/Hydra-Tech1 1.svg" alt="" />
+              </div>
+              <div class="img-swiper-slide swiper-slide">
+                <img src="/images/Hydra-Tech3 1.svg" alt="" />
+              </div>
+              <div class="img-swiper-slide swiper-slide">
+                <img src="/images/Hydra-Tech2 1.svg" alt="" />
+              </div>
+              <div class="img-swiper-slide swiper-slide">
+                <img src="/images/Hydra-Tech4 1.svg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </section>
-        <section class="how_we_build">
+        <section id="how_to_we_build_section" class="how_we_build">
           <div class="how_we_build_text">
             <h2>HOW WE BUILD</h2>
             <div class="how_we_build_text_right">
@@ -404,8 +501,66 @@
               </div>
             </div>
           </div>
+          <div class="elipse-swiper swiper">
+            <div class="elipse-swiper-wrapper swiper-wrapper">
+              <div class="elipse-swiper-slide swiper-slide">
+                <div class="elipse_box">
+                  <div class="elipse_1">
+                    <img src="/assets/Ellipse 7.svg" alt="Ellipse" />
+                    <img src="/assets/Ellipse 8.svg" alt="Ellipse" />
+                    <img src="/assets/01.svg" alt="Number" />
+                  </div>
+                  <div class="elipse_text_1">
+                    <img src="/assets/shape.svg" alt="arrow" />
+                    <p>3D Conception<span>& Design</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="elipse-swiper-slide swiper-slide">
+                <div class="elipse_box">
+                  <div class="elipse_1">
+                    <img src="/assets/Ellipse 7.svg" alt="Ellipse" />
+                    <img src="/assets/Ellipse 8.svg" alt="Ellipse" />
+                    <img src="/assets/02.svg" alt="Number" />
+                  </div>
+                  <div class="elipse_text_1">
+                    <img src="/assets/shape.svg" alt="arrow" />
+                    <p>Interaction<span>Design</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="elipse-swiper-slide swiper-slide">
+                <div class="elipse_box">
+                  <div class="elipse_1">
+                    <img src="/assets/Ellipse 7.svg" alt="Ellipse" />
+                    <img src="/assets/Ellipse 8.svg" alt="Ellipse" />
+                    <img src="/assets/03.svg" alt="Number" />
+                  </div>
+                  <div class="elipse_text_1">
+                    <img src="/assets/shape.svg" alt="arrow" />
+                    <p>VR World<span>User Testing</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="elipse-swiper-slide swiper-slide">
+                <div class="elipse_box">
+                  <div class="elipse_1">
+                    <img src="/assets/Ellipse 7.svg" alt="Ellipse" />
+                    <img src="/assets/Ellipse 8.svg" alt="Ellipse" />
+                    <img src="/assets/04.svg" alt="Number" />
+                  </div>
+                  <div class="elipse_text_1">
+                    <img src="/assets/shape.svg" alt="arrow" />
+                    <p>Hydra VR<span>Deploy</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </section>
-        <section class="forma">
+        <section id="section_forma" class="forma">
           <div class="user_forma">
             <h2>JOIN HYDRA</h2>
             <img src="/assets/Vector 16.svg" alt="Vector" />
@@ -479,7 +634,7 @@
             </form>
           </div>
         </section>
-        <section class="footer-section">
+        <section id="footer_section" class="footer-section">
           <div class="footer">
             <div class="footer_part_1">
               <img src="/images/Vector.svg" alt="logo" alt="logo company" />
@@ -521,6 +676,11 @@
               2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS
               RESERVED
             </p>
+          </div>
+          <div class="footer_lower_text_mobile">
+            <p>2023 © HYDRA LANDING PAGE</p>
+            <p>BY ZINE. E. FALOUTI</p>
+            <p>ALL RIGHTS RESERVED</p>
           </div>
         </section>
       </div>

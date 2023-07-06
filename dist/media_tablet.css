@@ -32,7 +32,7 @@
   .header-buttons {
     margin-top: 60px;
   }
-  .header-buttons button:first-child {
+  .header-buttons a:first-child button {
     width: 75px;
     height: 24px;
     border-radius: 40px;
@@ -40,7 +40,7 @@
     font-size: 6px;
     line-height: 8px;
   }
-  .header-buttons button:last-child {
+  .header-buttons a:last-child button {
     width: 75px;
     height: 24px;
     border-radius: 40px;
@@ -51,6 +51,7 @@
   .text-dive {
     margin-top: 35px;
     font-size: 23px;
+    max-width: 300px;
   }
 
   .text-virtual {
@@ -500,6 +501,10 @@
 
   .footer_lower_text {
     margin-top: 11px;
+    text-align: center;
+  }
+  .footer_lower_text img {
+    max-width: -webkit-fill-available;
   }
   .footer_lower_text p {
     margin: 39px 49px;
